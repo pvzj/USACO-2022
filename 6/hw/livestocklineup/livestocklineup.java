@@ -6,12 +6,16 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 
-class neighboringCows {
+class NeighboringCows {
     public boolean hasbeenVisited;
     public List<String> neighbors;
 
-    neighboringCows() {
+    NeighboringCows() {
         neighbors = new ArrayList<String>();
+    }
+
+    public String toString() {
+        return hasbeenVisited + " " + neighbors;
     }
 }
 
@@ -37,27 +41,27 @@ public class livestocklineup {
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = null;
 
-        HashMap<String, neighboringCows> hm = new HashMap<>();
+        HashMap<String, NeighboringCows> hm = new HashMap<>();
 
-        hm.put("Beatrice", new neighboringCows());
-        hm.put("Belinda", new neighboringCows());
-        hm.put("Bella", new neighboringCows());
-        hm.put("Bessie", new neighboringCows());
-        hm.put("Betsy", new neighboringCows());
-        hm.put("Blue", new neighboringCows());
-        hm.put("Buttercup", new neighboringCows());
-        hm.put("Sue", new neighboringCows());
+        hm.put("Beatrice", new NeighboringCows());
+        hm.put("Belinda", new NeighboringCows());
+        hm.put("Bella", new NeighboringCows());
+        hm.put("Bessie", new NeighboringCows());
+        hm.put("Betsy", new NeighboringCows());
+        hm.put("Blue", new NeighboringCows());
+        hm.put("Buttercup", new NeighboringCows());
+        hm.put("Sue", new NeighboringCows());
 
 
-        // neighboringCows[] nc = {
-        //     new neighboringCows("Beatrice"),
-        //     new neighboringCows("Belinda"),
-        //     new neighboringCows("Bella"),
-        //     new neighboringCows("Bessie"),
-        //     new neighboringCows("Betsy"),
-        //     new neighboringCows("Blue"),
-        //     new neighboringCows("Buttercup"),
-        //     new neighboringCows("Sue")
+        // NeighboringCows[] nc = {
+        //     new NeighboringCows("Beatrice"),
+        //     new NeighboringCows("Belinda"),
+        //     new NeighboringCows("Bella"),
+        //     new NeighboringCows("Bessie"),
+        //     new NeighboringCows("Betsy"),
+        //     new NeighboringCows("Blue"),
+        //     new NeighboringCows("Buttercup"),
+        //     new NeighboringCows("Sue")
         // };
 
         for (int i = 0; i < n; i++) {
@@ -71,10 +75,12 @@ public class livestocklineup {
             hm.get(cow2).neighbors.add(cow1);
         }
 
+        System.out.println(hm);
+
         List<List<String>> groups = getGroups(hm);
         System.out.println(groups);
 
-        System.out.println(getReverseList(new ArrayList<String>(Arrays.asList("a", "b", "c", "d", "e"))));
+        // System.out.println(getReverseList(new ArrayList<String>(Arrays.asList("a", "b", "c", "d", "e"))));
 
         for (int i = 0; i < groups.size(); i++) {
             groups.set(i, getOptimalOrder(groups.get(i)));
@@ -92,6 +98,20 @@ public class livestocklineup {
         pw.close();
         br.close();
     }
+
+    // private static List<List<String>> satisfyConstraints(List<List<String>> groups, HashMap<String, NeighboringCows> hm) {
+    //     List<List<String>> finalList = new ArrayList<>();
+    //     for (List<String> l : groups) {
+    //         List<String> current = new ArrayList<>();
+    //         for (String s : l) {
+    //             if (hm.get(s).neighbors.size() == 1) {
+    //                 current.add(s);
+
+    //             }
+    //         }
+    //     }
+    //     return groups;
+    // }
 
     private static List<String> getOptimalOrder(List<String> l) {
         List<String> reversedList = getReverseList(l);
@@ -119,17 +139,22 @@ public class livestocklineup {
         return newList;
     }
 
-    private static List<List<String>> getGroups(HashMap<String, neighboringCows> hm) {
+    private static List<List<String>> getGroups(HashMap<String, NeighboringCows> hm) {
         List<List<String>> l = new ArrayList<>();
+        System.out.println(hm.keySet());
+        TreeMap<String, NeighboringCows> tm = new TreeMap<>(hm);
+
         for (String s : hm.keySet()) {
-            l.add(getChain(s, hm));
+            if (hm.get(s).neighbors.size() == 0 || hm.get(s).neighbors.size() == 1) {
+                l.add(getChain(s, hm));
+            }
         }
 
         return l;
     }
 
-    private static List<String> getChain(String cow, HashMap<String, neighboringCows> hm) {
-        neighboringCows nc = hm.get(cow);
+    private static List<String> getChain(String cow, HashMap<String, NeighboringCows> hm) {
+        NeighboringCows nc = hm.get(cow);
         List<String> cowsInChain = new ArrayList<>();
         if (nc.hasbeenVisited) {
             return cowsInChain;
