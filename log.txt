@@ -1,0 +1,12 @@
+Fence Painting: 6/30/22 | 27 minutes | 10/10 test cases
+Square Pasture: 6/30/22 | 16 minutes | 10/10 test cases
+Blocked Billboard: 7/1/22 | 40 minutes | 10/10 test cases
+Blocked Billboard II: 7/1/22 and 7/3/22 | 61 minutes | 10/10 test cases
+Block Game: 7/3/22 | 46 minutes | 10/10 test cases
+Cow Signal: 7/3/22 | 11 minutes | 10/10 test cases
+Shell Game: 7/6/22 | 31 minutes | 10/10 test cases
+The Lost Cow: 7/6/22 | 40 minutes | 10/10 test cases
+Team Tic Tac Toe: 7/6/22 | 58 minutes | 10/10 test cases
+Where Am I?: 7/8/22 and 7/9/22 | 19 minutes | 10/10 test cases
+Don't Be Last!: 7/13/22 | 42 minutes | 11/11 test cases
+Livestock Lineup: 7/19/22 | | 6/10 test cases
