@@ -142,7 +142,7 @@ public class livestocklineup {
     private static List<List<String>> getGroups(HashMap<String, NeighboringCows> hm) {
         List<List<String>> l = new ArrayList<>();
         System.out.println(hm.keySet());
-        TreeMap<String, NeighboringCows> tm = new TreeMap<>(hm);
+        // TreeMap<String, NeighboringCows> tm = new TreeMap<>(hm);
 
         for (String s : hm.keySet()) {
             if (hm.get(s).neighbors.size() == 0 || hm.get(s).neighbors.size() == 1) {

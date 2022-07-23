@@ -10,3 +10,4 @@ Team Tic Tac Toe: 7/6/22 | 58 minutes | 10/10 test cases
 Where Am I?: 7/8/22 and 7/9/22 | 19 minutes | 10/10 test cases
 Don't Be Last!: 7/13/22 | 42 minutes | 11/11 test cases
 Livestock Lineup: 7/19/22 | +2 hrs | 10/10 test cases
+Cow Gymnastics: 7/22/22 | 37 minutes | 10/10 test cases
