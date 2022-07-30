@@ -41,7 +41,6 @@ public class photoshoot {
             List<Integer> sequenceList = new ArrayList<>();
             int current = i;
             for (int j = 0; j < order.length; j++) {
-                // System.out.println(sequenceList + " " + current);
                 int prevLength = sequence.size();
                 sequence.add(current);
                 sequenceList.add(current);
@@ -51,7 +50,6 @@ public class photoshoot {
                 if (prevLength == sequence.size()) {
                     break;
                 }
-                // System.out.println(sequenceList + " d " + current);
             }
 
             sequence.add(current);

@@ -13,3 +13,5 @@ Livestock Lineup: 7/19/22 | +2 hrs | 10/10 test cases
 Cow Gymnastics: 7/22/22 | 37 minutes | 10/10 test cases
 Back And Forth: 7/22/22 | 1 hour 25 minutes | 7/10 test cases
 Word Processor: 7/24/22 | 20 minutes | 10/10 test cases
+Photoshoot: 7/24/22 | 24 minutes | 10/10 test cases
+Milk Factory: 7/28/22 | 41 minutes | 10/10 test cases
