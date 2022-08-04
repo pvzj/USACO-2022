@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d15071b6-a83a-4f59-a828-d03e73c13f22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/6/hw/livestocklineup/livestocklineup.java" beforeDir="false" afterPath="$PROJECT_DIR$/6/hw/livestocklineup/livestocklineup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
