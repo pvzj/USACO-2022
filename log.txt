@@ -18,3 +18,8 @@ Milk Factory: 7/28/22 | 41 minutes | 10/10 test cases
 Mad Scientist: 8/1/22 | 10 minutes | 10/10 test cases
 Cow Tipping: 8/1/22 | 20 minutes | 10/10 test cases
 Even More Odd Photos: 8/1/22 | 26 minutes | 10/10 test cases
+Do You Know Your ABCs?: 8/3/22 | 14 minutes | 10/10 test cases
+Promotion Counting: 8/4/22 | 29 minutes | 10/10 test cases
+Angry Cows: 8/4/22 | 22 minutes | 10/10 test cases
+Mowing The Field: 8/4/22 | 46 minutes | 10/10 test cases
+Sleepy Cow Herding: 8/4/22 | 28 minutes | 10/10 test cases
