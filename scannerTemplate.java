@@ -5,6 +5,16 @@ public class scannerTemplate {
 
         int n = s.nextInt();
 
-        
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++) {
+            nums[i] = s.nextInt();
+        }
+
+        String[] strings = new String[n];
+        for (int i = 0; i < n; i++) {
+            strings[i] = s.next();
+        }
+
+        s.close();
     }
 }
